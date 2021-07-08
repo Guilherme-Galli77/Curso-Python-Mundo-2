@@ -18,8 +18,10 @@ while True:
             print("Erro!!")
             jogador = str(input("PAR ou IMPAR? ")).upper().strip()
 
-    jogada = int(input("Digite um numero aleatório de 0 a 10"))
+    jogada = int(input("Digite um numero aleatório de 0 a 10: "))
     maquina = random.randint(0, 10)
+    print("===========================================================================")
+    print(f"Você jogou {jogada} e o computador {maquina}, totalizando {jogada+maquina}")
 
     if (maquina + jogada) % 2 == 0:
         print("PAR ganhou")
@@ -43,5 +45,5 @@ while True:
 
     if derrota == 1:
         break
-
+print("===========================================================================")
 print(f"O total de vitorias consecutivas foi {vitorias}")
